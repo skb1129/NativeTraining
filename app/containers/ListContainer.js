@@ -17,7 +17,7 @@ class ListContainer extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>React Native Application</Text>
+        <Text style={styles.title}>Native Training</Text>
         {this.state.buttons.map(item => (
           <TouchableOpacity key={item.id} style={styles.btn}>
             <Text style={styles.btnText}>{item.btnText}</Text>
@@ -31,19 +31,27 @@ class ListContainer extends Component {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 20,
+    borderBottomWidth: 0.5,
+    borderColor: '#bbb',
+    borderStyle: 'solid',
+    borderRadius: 20,
   },
   title: {
-    fontSize: 30,
+    fontSize: 35,
+    padding: 15,
+    fontWeight: 'bold',
   },
   btn: {
-    borderColor: '#000',
+    borderColor: '#bbb',
     borderStyle: 'solid',
-    borderWidth: 2,
-    backgroundColor: '#000',
+    borderTopWidth: 0.5,
+    borderRadius: 20,
   },
   btnText: {
-    fontSize: 15,
-    color: '#fff',
+    width: '50%',
+    fontSize: 20,
+    color: '#a04',
+    padding: 15,
   }
 });
 
