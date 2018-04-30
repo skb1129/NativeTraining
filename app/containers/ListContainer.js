@@ -5,28 +5,7 @@ import fetchListItems from '../services/ListItemsService';
 
 class ListContainer extends Component {
   state = {
-    buttons: [
-      {
-        id: 1,
-        btnText: 'Hello',
-      },
-      {
-        id: 2,
-        btnText: 'React',
-      },
-      {
-        id: 3,
-        btnText: 'Native',
-      },
-      {
-        id: 4,
-        btnText: 'Application',
-      },
-      {
-        id: 5,
-        btnText: 'User',
-      },
-    ],
+    buttons: [],
   };
   
   componentDidMount() {
