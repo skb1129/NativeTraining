@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   btnText: {
-    width: '50%',
     fontSize: 20,
     color: '#a04',
     padding: 15,

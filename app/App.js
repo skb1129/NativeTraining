@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 
 import ListContainer from './containers/ListContainer';
 import ImagesContainer from './containers/ImagesContainer';
@@ -7,10 +7,10 @@ import ImagesContainer from './containers/ImagesContainer';
 class App extends Component {
   render() {
     return (
-      <View>
+      <ScrollView>
         <ListContainer />
         <ImagesContainer />
-      </View>
+      </ScrollView>
     );
   }
 }

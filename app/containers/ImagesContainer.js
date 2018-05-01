@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 
 import fetchImages from '../services/ImagesService';
 
@@ -29,8 +29,7 @@ class ImagesContainer extends Component {
     }
     return (
       <View>
-        <Text>Images Container</Text>
-        <ViewImages />
+        <ViewImages images={this.state.images}/>
       </View>
     );
   }

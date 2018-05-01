@@ -16,7 +16,7 @@ class ListButtons extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Native Training</Text>
+        <Text style={styles.title}>Native List</Text>
         {this.props.buttons.map(button => (
           <Button key={button.id} button={button}/>
         ))}
