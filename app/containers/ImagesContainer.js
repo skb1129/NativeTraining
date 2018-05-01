@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 
 import fetchImages from '../services/ImagesService';
 
+import ViewImages from '../components/ViewImages';
 import Loader from '../components/Loader';
 
 class ImagesContainer extends Component {
@@ -29,6 +30,7 @@ class ImagesContainer extends Component {
     return (
       <View>
         <Text>Images Container</Text>
+        <ViewImages />
       </View>
     );
   }
