@@ -1,20 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 
 import Button from './Button';
 
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: 20,
-  },
-  title: {
-    fontSize: 35,
-    padding: 15,
-    fontWeight: 'bold',
-    color: '#000',
-  },
-});
+import styles from '../styles/components/list-buttons';
 
 class ListButtons extends Component {
   static propTypes = {

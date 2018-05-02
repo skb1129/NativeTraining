@@ -1,22 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 
 import Image from './Image';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-  title: {
-    fontSize: 35,
-    padding: 15,
-    fontWeight: 'bold',
-    color: '#000',
-  },
-});
+import styles from '../styles/components/view-images';
 
 class ViewImages extends Component {
   static propTypes = {

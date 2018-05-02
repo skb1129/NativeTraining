@@ -1,20 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
+import { Text, TouchableOpacity, Alert } from 'react-native';
 
-const styles = StyleSheet.create({
-  btn: {
-    borderColor: '#bbb',
-    borderStyle: 'solid',
-    borderBottomWidth: 0.7,
-    borderRadius: 20,
-  },
-  btnText: {
-    fontSize: 20,
-    color: '#a04',
-    padding: 15,
-  },
-});
+import styles from '../styles/components/button';
 
 class Button extends Component {
   static propTypes = {

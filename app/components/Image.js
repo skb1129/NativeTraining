@@ -1,17 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, Image as NativeImage, StyleSheet, Dimensions } from 'react-native';
+import { View, Image as NativeImage } from 'react-native';
 
-const deviceWidth = Dimensions.get('window').width;
-
-const styles = StyleSheet.create({
-  image: {
-    height: (deviceWidth / 2) - 10,
-    width: (deviceWidth / 2) - 10,
-    margin: 5,
-    borderRadius: 10,
-  },
-});
+import styles from '../styles/components/image';
 
 class Image extends Component {
   static propTypes = {
