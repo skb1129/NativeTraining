@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 
 class Button extends Component {
   static propTypes = {
     button: PropTypes.object.isRequired,
   };
   
+  showAlert = () => { Alert.alert(this.props.button.btnText) };
+  
   render() {
     return (
-      <TouchableOpacity style={styles.btn}>
+      <TouchableOpacity style={styles.btn} onPress={this.showAlert}>
         <Text style={styles.btnText}>{this.props.button.btnText}</Text>
       </TouchableOpacity>
     );
