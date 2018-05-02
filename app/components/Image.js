@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, Image as NativeImage, StyleSheet } from 'react-native';
+import { View, Image as NativeImage, StyleSheet, Dimensions } from 'react-native';
+
+const deviceWidth = Dimensions.get('window').width;
 
 class Image extends Component {
   static propTypes = {
@@ -13,7 +15,6 @@ class Image extends Component {
         <NativeImage
           style={styles.image}
           source={{uri: this.props.image.imageUrl}}
-          resizeMode='contain'
         />
       </View>
     );
@@ -22,8 +23,10 @@ class Image extends Component {
 
 const styles = StyleSheet.create({
   image: {
-    height: 180,
-    width: 180,
+    height: deviceWidth/2 - 10,
+    width: deviceWidth/2 - 10,
+    margin: 5,
+    borderRadius: 10,
   }
 });
 

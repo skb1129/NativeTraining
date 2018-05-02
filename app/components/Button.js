@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   btn: {
     borderColor: '#bbb',
     borderStyle: 'solid',
-    borderTopWidth: 0.5,
+    borderBottomWidth: 0.7,
     borderRadius: 20,
   },
   btnText: {

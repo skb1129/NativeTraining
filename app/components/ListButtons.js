@@ -28,10 +28,6 @@ class ListButtons extends Component {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 20,
-    borderBottomWidth: 0.5,
-    borderColor: '#bbb',
-    borderStyle: 'solid',
-    borderRadius: 20,
   },
   title: {
     fontSize: 35,
