@@ -4,6 +4,18 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import Button from './Button';
 
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 20,
+  },
+  title: {
+    fontSize: 35,
+    padding: 15,
+    fontWeight: 'bold',
+    color: '#000',
+  },
+});
+
 class ListButtons extends Component {
   static propTypes = {
     buttons: PropTypes.array,
@@ -24,17 +36,5 @@ class ListButtons extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: 20,
-  },
-  title: {
-    fontSize: 35,
-    padding: 15,
-    fontWeight: 'bold',
-    color: '#000',
-  },
-});
 
 export default ListButtons;

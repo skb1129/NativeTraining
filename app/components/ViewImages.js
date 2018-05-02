@@ -4,6 +4,20 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import Image from './Image';
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+  title: {
+    fontSize: 35,
+    padding: 15,
+    fontWeight: 'bold',
+    color: '#000',
+  },
+});
+
 class ViewImages extends Component {
   static propTypes = {
     images: PropTypes.array,
@@ -26,19 +40,5 @@ class ViewImages extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-  title: {
-    fontSize: 35,
-    padding: 15,
-    fontWeight: 'bold',
-    color: '#000',
-  },
-});
 
 export default ViewImages;
