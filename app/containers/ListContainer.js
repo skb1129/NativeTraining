@@ -11,25 +11,25 @@ class ListContainer extends Component {
     buttons: [],
     isLoading: true,
   };
-  
+
   componentDidMount() {
-    fetchListItems().then(data => {
+    fetchListItems().then((data) => {
       this.setState({
         buttons: data.buttons,
         isLoading: false,
       });
-    }).catch(error => { console.log(error) });
+    }).catch((error) => { console.log(error); });
   }
-  
+
   render() {
     if (this.state.isLoading) {
       return (
         <Loader />
-      )
+      );
     }
     return (
       <View>
-        <ListButtons buttons={this.state.buttons}/>
+        <ListButtons buttons={this.state.buttons} />
       </View>
     );
   }

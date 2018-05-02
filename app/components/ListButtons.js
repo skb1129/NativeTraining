@@ -8,17 +8,17 @@ class ListButtons extends Component {
   static propTypes = {
     buttons: PropTypes.array,
   };
-  
+
   static defaultProps = {
     buttons: [],
   };
-  
+
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Native List</Text>
         {this.props.buttons.map(button => (
-          <Button key={button.id} button={button}/>
+          <Button key={button.id} button={button} />
         ))}
       </View>
     );

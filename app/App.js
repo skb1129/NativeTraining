@@ -7,7 +7,7 @@ import ImagesContainer from './containers/ImagesContainer';
 class App extends Component {
   render() {
     return (
-      <ScrollView contentContainerStyle={{flexGrow: 1}}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <ListContainer />
         <ImagesContainer />
       </ScrollView>

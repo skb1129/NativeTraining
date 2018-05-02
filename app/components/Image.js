@@ -8,13 +8,13 @@ class Image extends Component {
   static propTypes = {
     image: PropTypes.object.isRequired,
   };
-  
+
   render() {
     return (
       <View>
         <NativeImage
           style={styles.image}
-          source={{uri: this.props.image.imageUrl}}
+          source={{ uri: this.props.image.imageUrl }}
         />
       </View>
     );
@@ -23,11 +23,11 @@ class Image extends Component {
 
 const styles = StyleSheet.create({
   image: {
-    height: deviceWidth/2 - 10,
-    width: deviceWidth/2 - 10,
+    height: (deviceWidth / 2) - 10,
+    width: (deviceWidth / 2) - 10,
     margin: 5,
     borderRadius: 10,
-  }
+  },
 });
 
 export default Image;

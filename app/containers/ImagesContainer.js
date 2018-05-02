@@ -11,25 +11,25 @@ class ImagesContainer extends Component {
     images: [],
     isLoading: true,
   };
-  
+
   componentDidMount() {
-    fetchImages().then(data => {
+    fetchImages().then((data) => {
       this.setState({
         images: data.images,
         isLoading: false,
       });
-    }).catch(error => { console.log(error) });
+    }).catch((error) => { console.log(error); });
   }
-  
+
   render() {
     if (this.state.isLoading) {
       return (
         <Loader />
-      )
+      );
     }
     return (
       <View>
-        <ViewImages images={this.state.images}/>
+        <ViewImages images={this.state.images} />
       </View>
     );
   }

@@ -6,9 +6,9 @@ class Button extends Component {
   static propTypes = {
     button: PropTypes.object.isRequired,
   };
-  
-  showAlert = () => { Alert.alert(this.props.button.btnText) };
-  
+
+  showAlert = () => { Alert.alert(this.props.button.btnText); };
+
   render() {
     return (
       <TouchableOpacity style={styles.btn} onPress={this.showAlert}>
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#a04',
     padding: 15,
-  }
+  },
 });
 
 export default Button;

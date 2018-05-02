@@ -8,18 +8,18 @@ class ViewImages extends Component {
   static propTypes = {
     images: PropTypes.array,
   };
-  
+
   static defaultProps = {
     images: [],
   };
-  
+
   render() {
     return (
       <View>
         <Text style={styles.title}>Native Images</Text>
         <View style={styles.container}>
           {this.props.images.map(image => (
-            <Image key={image.id} image={image}/>
+            <Image key={image.id} image={image} />
           ))}
         </View>
       </View>
